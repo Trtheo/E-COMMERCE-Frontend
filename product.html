@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details - ShopEase</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/components/header.css"/>
+<link rel="stylesheet" href="css/components/footer.css"/>
+<link rel="stylesheet" href="css/components/product-card.css"/>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html">ShopEase</a></div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+
+           <li><a href="#" id="search-toggle" title="Search"><img src="images/icons/icons8-search.svg" alt="Search" style="width: 22px; vertical-align: middle;"/></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Details Section -->
+  <section class="product-detail">
+    <div class="container">
+      <div class="product-detail-grid">
+        <div class="product-image">
+          <img src="images/products/product1.jpg" alt="Product Image" />
+        </div>
+        <div class="product-info">
+          <h1>Stylish Sneakers</h1>
+          <div class="rating">★★★★☆ (120 reviews)</div>
+          <p class="price">$79.99</p>
+          <p class="description">
+            These stylish sneakers are perfect for everyday wear. Lightweight, breathable, and built for comfort with premium materials.
+          </p>
+          <label>Quantity:</label>
+          <input type="number" value="1" min="1" />
+          <br><br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ShopEase. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/icons/instagram.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .product-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+      margin-top: 2rem;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-info h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #ff6f61;
+      margin-bottom: 1rem;
+    }
+
+    .product-info .rating {
+      color: #ffc107;
+      margin-bottom: 1rem;
+    }
+
+    .product-info .description {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .product-info input[type="number"] {
+      width: 60px;
+      padding: 0.4rem;
+    }
+
+    @media (max-width: 768px) {
+      .product-detail-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</body>
+</html>

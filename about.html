@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - ShopEase</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/components/header.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+  <link rel="stylesheet" href="css/components/product-card.css"/>
+  <style>
+    .about {
+      padding: 4rem 1rem;
+      background: linear-gradient(to right, #ffffff, #fdf2ef);
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .about-card {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-card h3 {
+      color: #ff6f61;
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-card p,
+    .about-card ul {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .about-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about-card ul li {
+      margin-bottom: 0.4rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .about-card ul li::before {
+      content: '\2713';
+      color: #ff6f61;
+      position: absolute;
+      left: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html">ShopEase</a></div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="category.html">Categories</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About ShopEase</h2>
+      <p>
+        Welcome to <strong>ShopEase</strong> – your modern, fast-growing e-commerce destination that blends technology and trust. 
+        Whether you're shopping for the latest tech, fashion trends, or daily essentials, we promise simplicity, speed, and satisfaction.
+      </p>
+      <p>
+        Since our founding in 2025, we've connected thousands of shoppers with top brands and dependable services. Our mission is to redefine online shopping in Africa and beyond — through innovation, integrity, and inspiration.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>Deliver a seamless, empowering shopping experience built on speed, trust, and community.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Values</h3>
+          <ul>
+            <li>Customer First Always</li>
+            <li>Transparency in Action</li>
+            <li>Innovation through Technology</li>
+            <li>Continuous Growth & Learning</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Why ShopEase?</h3>
+          <p>Because we’re more than a store — we’re a shopping experience. Curated products. Trusted sellers. Lightning-fast delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ShopEase. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/icons/instagram.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Categories - ShopEase</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/components/header.css"/>
+<link rel="stylesheet" href="css/components/footer.css"/>
+<link rel="stylesheet" href="css/components/product-card.css"/>
+<link rel="stylesheet" href="css/components/search.css"/>
+
+<style>
+
+    
+  .search-bar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff0ec;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .search-bar input {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    max-width: 80%;
+  }
+
+  .search-bar button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+    <header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">ShopEase</a>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#" id="search-toggle" title="Search"><img src="images/icons/icons8-search.svg" alt="Search" style="width: 22px; vertical-align: middle;"/></a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="search-bar" id="search-bar">
+    <input type="text" placeholder="Search products..." />
+    <button class="btn">Search</button>
+  </div>
+  </header>
+
+  <!-- Category Section -->
+  <section class="featured-products">
+    <div class="container">
+      <h2>Shop by Category</h2>
+      <div class="product-grid">
+        <!-- Sample Product Card -->
+        <div class="product-card">
+          <img src="images/products/product4.jpg" alt="Product" />
+          <h3>Running Shoes</h3>
+          <p class="price">$59.99</p>
+          <div class="rating">★★★★☆</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="images/products/product5.jpg" alt="Product" />
+          <h3>Smart Watch</h3>
+          <p class="price">$89.99</p>
+          <div class="rating">★★★★★</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- More product cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ShopEase. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/icons/instagram.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("search-toggle");
+    const searchBar = document.getElementById("search-bar");
+
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      searchBar.style.display = searchBar.style.display === "flex" ? "none" : "flex";
+    });
+  });
+</script>
+
+</body>
+</html>
